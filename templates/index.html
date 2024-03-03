@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiabPredict</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            background-image: url('../static/Diabetes_share.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+        }
+        .card:hover{
+            background-color: rgba(255, 255, 255, 1);
+        }
+        .title {
+            color: #e74c3c;
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 700; 
+        }
+        .description {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            padding: 12px 24px; 
+            font-size: 16px; 
+            font-weight: bold;
+            border-radius: 30px;
+            margin-top: 20px;
+            background-color: rgb(11, 144, 11);
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease; 
+        }
+        .btn:hover {
+            transform: scale(1.05); 
+            color: white;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1 class="title">Welcome to the DiabPredict: Advanced Diabetes Prediction Tool</h1>
+        <p class="description">Our machine learning model helps predict the likelihood of developing diabetes. Take control of your health by starting the prediction now!</p>
+        <a href="/predictdata" class="btn">Start Prediction</a>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2024 DiabPredict. All rights reserved. | Developed by Anirudh
+</div>
+
+</body>
+</html>
